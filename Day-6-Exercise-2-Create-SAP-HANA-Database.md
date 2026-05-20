@@ -1,5 +1,5 @@
-# Day 6 Exercise 3
-This is a reference of Code for Day 6 Exercise 3
+# Day 6 Exercise 2
+This is a reference of Code for Day 6 Exercise 2
 
 ## Create and Subscribe to SAP HANA Cloud
 ### Steps
