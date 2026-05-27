@@ -1,4 +1,4 @@
-# Day 7 Exercise 3
+# Day 7 Exercise 2
 This is a reference of Code for Day 7 Exercise 2
 
 ## Add FLP Config

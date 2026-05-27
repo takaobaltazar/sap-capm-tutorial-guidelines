@@ -1,4 +1,4 @@
-# Day 7 Exercise 4 - Setup SAP BTP Work Zone
+# Day 7 Exercise 3 - Setup SAP BTP Work Zone
 This is a reference of Code for Day 7 Exercise 4
 
 ## Access Work Zone
