@@ -48,7 +48,7 @@ Comment-out `@insertonly`
 
 ## Rename Service Implementation
 ### Steps:
-1. Rename the Service Implementation file from **admin-service.js** to **admin-custom-service.js** under **srv** folder.
+1. In `srv` folder, rename the Service Implementation file from **admin-service.js** to **admin-custom-service.js**.
 <kbd> ![Description](images/Day3-Exercise2-Rename-Admin-Service-JS.png) </kbd>
 
 2. Open **terminal** and run `cds watch`.

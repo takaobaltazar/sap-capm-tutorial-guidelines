@@ -13,21 +13,22 @@ action submitOrder (bookId: String, quantity: Integer);
 ## Implementing Action
 ### Steps:
 1. Open Service Implementation **srv/admin-custom-service.js**
-2. Define custom event **unbound action** and name it to `submitOrder`. 
-```js
-this.on('submitOrder', async (req) => {
-    const { bookId, quantity } = req.data;
+2. Define custom event **unbound action** and name it to `submitOrder`.  Put this inside `module.exports` after an existing function.
 
-    if (!bookId) {
-        req.reject(412, 'Book Id is mandatory');
-    }
-    if (quantity > 10) {
-        req.reject(412, 'Order exceed stock. Available stock is: 10');
-    }
+    ```js
+    this.on('submitOrder', async (req) => {
+        const { bookId, quantity } = req.data;
 
-    return bookId;
-});
-```
+        if (!bookId) {
+            req.reject(412, 'Book Id is mandatory');
+        }
+        if (quantity > 10) {
+            req.reject(412, 'Order exceed stock. Available stock is: 10');
+        }
+
+        return bookId;
+    });
+    ```
 
 ## Add new POST HTTP Request
 ### Steps:

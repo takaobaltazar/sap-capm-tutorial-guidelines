@@ -57,7 +57,7 @@ cds watch --profile development
   - Connection name: `Local SQLite Database`.
   - Database file: `/home/user/projects/zbootcamp/db.sqlite`.
 
-> Note: Right click your `db.sqlite` and select `Copy relative path` to get the link of `Database file`. Alternatively, you can type `pwd` in terminal.
+> Note: Right click your `db.sqlite` and select `Copy path` to get the link of `Database file`. Alternatively, you can type `pwd` in terminal.
 
 2. Click `Save Connection`.
 <kbd> ![Description](images/Day4-Exercise1-Setup-SQLTool-Part-2.png)</kbd>
@@ -68,6 +68,8 @@ cds watch --profile development
 
 ## Preview
 1. The `Tables` and `Views` should now be available after you connect.
-2. The `.sql` file allows you to execute query in `SQLite syntax`.
-3. To run a query, click the **Run on active connection** above your SQL query. Alternatively, **right click** > **Run query**
-<kbd> ![Description](images/Day4-Exercise1-Setup-SQLTool-Part-4.png)</kbd>
+2. The `.sql` file will open automatically and allows you to execute query in `SQLite syntax`. This is optional and you can close it.
+3. To run a query, **right click** > **Show Table Records**.
+  <kbd> ![Description](images/Day4-Exercise1-Setup-SQLTool-Part-4.png)</kbd>
+4. In the `ID` column, you can filter the exact value.
+  <kbd> ![Description](images/Day4-Exercise1-Setup-SQLTool-Part-5.png)</kbd>

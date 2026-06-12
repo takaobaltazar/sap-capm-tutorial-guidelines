@@ -4,32 +4,33 @@ This is a reference of Code for Day 2 Exercise 2
 ## Define Aspect and New Entity
 ### Steps:
 1. Open `db/domain-model.cds` file.
-2. Create **name aspect** as **additionalInfo** and assigned it to entity.
+2. Create **aspect** as `additionalInfo` with `name` field and assigned it to `Authors` entity.
 3. Remove the **name** field in **Authors** entity.
-4. Create new entity **Publishers.**
-```cds
-namespace com.bookshop;
+4. Create new entity **Publishers**. Then assigned `additionalInfo` as aspect.
 
-aspect additionalInfo {
-    name: String (120);
-}
+    ```cds
+    namespace com.bookshop;
 
-entity Books {
-    key ID  : String;
-    title   : String(100);
-    stock   : Integer;
-    price   : Decimal(9,2);
-}
+    aspect additionalInfo {
+        name: String (120);
+    }
 
-entity Authors: additionalInfo {
-    key ID  : String;
-}
+    entity Books {
+        key ID  : String;
+        title   : String(100);
+        stock   : Integer;
+        price   : Decimal(9,2);
+    }
 
-entity Publishers: additionalInfo {
-    key ID  : String;
-}
-```
-<kbd> ![Description](images/Day2-Exercise2-New-Aspect.png)  </kbd>
+    entity Authors: additionalInfo {
+        key ID  : String;
+    }
+
+    entity Publishers: additionalInfo {
+        key ID  : String;
+    }
+    ```
+    <kbd> ![Description](images/Day2-Exercise2-New-Aspect.png)  </kbd>
 
 ## Add new Entity in Service Definition
 ### Steps:
@@ -50,40 +51,47 @@ entity Publishers as projection on bookshop.Publishers;
 
 ## Add Association and Composition
 ### Steps:
-1. Open `db/domain-model.cds`
-2. Include relationship for each entity.
-```cds
-namespace com.bookshop;
+1. Open `db/domain-model.cds`, then do the following:
+2. In `Authors` entity:
+    - Add `books` field, then assign it with `Composition of many Books on books.author = $self;`
+3. In `Publishers` entity:
+    - Add `books` field, then assign it with `Composition of many Books on books.publisher = $self;`
+4. In `Books` entity:
+    - Add `author` field, then assign it with `Association to Authors;`
+    - Add `publisher` field, then assign it with `Association to Publishers;`
 
-aspect additionalInfo {
-    name : String(120);
-}
+    ```cds
+    namespace com.bookshop;
 
-entity Books {
-    key ID        : String;
-        title     : String(100);
-        stock     : Integer;
-        price     : Decimal(9, 2);
-        author    : Association to Authors;
-        publisher : Association to Publishers;
-}
+    aspect additionalInfo {
+        name : String(120);
+    }
 
-entity Authors : additionalInfo {
-    key ID    : String;
-        books : Composition of many Books
-                    on books.author = $self;
-}
+    entity Books {
+        key ID        : String;
+            title     : String(100);
+            stock     : Integer;
+            price     : Decimal(9, 2);
+            author    : Association to Authors;
+            publisher : Association to Publishers;
+    }
 
-entity Publishers : additionalInfo {
-    key ID    : String;
-        books : Composition of many Books
-                    on books.publisher = $self;
-}
-```
+    entity Authors : additionalInfo {
+        key ID    : String;
+            books : Composition of many Books
+                        on books.author = $self;
+    }
+
+    entity Publishers : additionalInfo {
+        key ID    : String;
+            books : Composition of many Books
+                        on books.publisher = $self;
+    }
+    ```
 
 ## CDS Graphical Modeler
 You can define entity using **CDS Graphical Modeler**.
-It can be access by right click of **Model Definition** > **Opens With** > **CDS Graphical Modeler**.
+It can be access by right click of **domain-model.cds(Model Definition)** > **Opens With** > **CDS Graphical Modeler**.
 <kbd> ![Description](images/Day2-Exercise2-Graphical-Modeler.png) </kbd>
 
 ## Add Initial Data to Publisher entity and Modify Data for Books entity.

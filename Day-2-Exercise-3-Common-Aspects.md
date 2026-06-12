@@ -5,37 +5,38 @@ This is a reference of Code for Day 2 Exercise 3
 ### Steps
 1. Open `db/domain-model.cds`
 2. Import the common aspect **managed** and **cuid** for all entities. 
-```cds
-namespace com.bookshop;
+3. Remove `key ID` field for entity **Books**, **Authors** and **Publishers**.
+    ```cds
+    namespace com.bookshop;
 
-using {
-    managed,
-    cuid
-} from '@sap/cds/common';
+    using {
+        managed,
+        cuid
+    } from '@sap/cds/common';
 
-aspect additionalInfo {
-    name : String(120);
-}
+    aspect additionalInfo {
+        name : String(120);
+    }
 
-entity Books : managed, cuid {
-    title     : String(100);
-    stock     : Integer;
-    price     : Decimal(9, 2);
-    author    : Association to Authors;
-    publisher : Association to Publishers;
-}
+    entity Books : managed, cuid {
+        title     : String(100);
+        stock     : Integer;
+        price     : Decimal(9, 2);
+        author    : Association to Authors;
+        publisher : Association to Publishers;
+    }
 
-entity Authors : additionalInfo, managed, cuid {
-    books : Composition of many Books
-                on books.author = $self;
-}
+    entity Authors : additionalInfo, managed, cuid {
+        books : Composition of many Books
+                    on books.author = $self;
+    }
 
-entity Publishers : additionalInfo, managed, cuid {
-    books : Composition of many Books
-                on books.publisher = $self;
-}
-```
-<kbd> ![Description](images/Day2-Exercise3-Import-Common-Aspect.png) </kbd>
+    entity Publishers : additionalInfo, managed, cuid {
+        books : Composition of many Books
+                    on books.publisher = $self;
+    }
+    ```
+    <kbd> ![Description](images/Day2-Exercise3-Import-Common-Aspect.png) </kbd>
 
 ## Check Metadata
 ### Steps

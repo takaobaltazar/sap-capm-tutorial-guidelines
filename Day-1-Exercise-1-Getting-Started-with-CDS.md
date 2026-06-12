@@ -20,36 +20,36 @@ This is a reference of Code for Day 1 Exercise.
 
 ## Define Data Model
 ### Steps:
-1. Define **Domain models** by creating file name **domain-model.cds** in **db** folder.
+1. Right click the `db` folder and create file with `domain-model.cds`.
 2. Copy the following code below: 
-```cds
-namespace com.bookshop;
+    ```cds
+    namespace com.bookshop;
 
-entity Books {
-    key ID  : String;
-    title   : String(100);
-    stock   : Integer;
-    price   : Decimal(9,2);
-}
+    entity Books {
+        key ID  : String;
+        title   : String(100);
+        stock   : Integer;
+        price   : Decimal(9,2);
+    }
 
-entity Authors {
-    key ID  : String;
-    name    : String(100);
-}
-```
+    entity Authors {
+        key ID  : String;
+        name    : String(100);
+    }
+    ```
 
 ## Define Services
 ### Steps:
-1. Define **Services** by creating file name **admin-service.cds** in **srv** folder.
+1. Right click the `srv` folder and create file with `admin-service.cds`.
 2. Copy the following code below.
-```cds
-using { com.bookshop as bookshop } from '../db/domain-model';
+    ```cds
+    using { com.bookshop as bookshop } from '../db/domain-model';
 
-service AdminService {
-    entity Books as SELECT from bookshop.Books;
-    entity Authors as SELECT from bookshop.Authors;
-}      
-```
+    service AdminService {
+        entity Books as SELECT from bookshop.Books;
+        entity Authors as SELECT from bookshop.Authors;
+    }      
+    ```
 
 ## Run Service
 Using **cds watch** to run the service.
@@ -92,7 +92,8 @@ cf40f587-e367-4f8b-b89a-26deb4c7c81f,Invisible Man,50,400
 ```
 
 ## Service running with Data
-1. After you add initial data, your **cds watch** in terminal should restart to reflect the changes made in your file. In case you closed it, open again **terminal** and execute the **cds watch** command.
+1. After you add initial data, your **cds watch** in terminal should restart to reflect the changes made in your file. 
+    > In case you closed it, open again **terminal** and execute the **cds watch** command.
 2. Data are now loaded into the database.
 <kbd> ![Description](images/Day1-Exercise1-Service-Running.png) </kbd>
 

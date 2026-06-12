@@ -13,37 +13,39 @@ This is a reference of Code for Day 3 Exercise 1
 ## Add Input Validation
 ### Steps:
 1. Open **db/domain-model.cds.**
-2. Append `@mandatory` to `title` and `name` field.
-```cds
-namespace com.bookshop;
+2. In `Books` entity, Append `@mandatory` to `title` field. Put it after the data type.
+3. In `additionalInfo` aspect, Append `@mandatory` to `name` field. Put it after the data type.
 
-using {
-    managed,
-    cuid
-} from '@sap/cds/common';
+    ```cds
+    namespace com.bookshop;
 
-aspect additionalInfo {
-    name : String(120) @mandatory;
-}
+    using {
+        managed,
+        cuid
+    } from '@sap/cds/common';
 
-entity Books : managed, cuid {
-    title     : String(100) @mandatory;
-    stock     : Integer;
-    price     : Decimal(9, 2);
-    author    : Association to Authors;
-    publisher : Association to Publishers;
-}
+    aspect additionalInfo {
+        name : String(120) @mandatory;
+    }
 
-entity Authors : additionalInfo, managed, cuid {
-    books : Composition of many Books
-                on books.author = $self;
-}
+    entity Books : managed, cuid {
+        title     : String(100) @mandatory;
+        stock     : Integer;
+        price     : Decimal(9, 2);
+        author    : Association to Authors;
+        publisher : Association to Publishers;
+    }
 
-entity Publishers : additionalInfo, managed, cuid {
-    books : Composition of many Books
-                on books.publisher = $self;
-}
-```
+    entity Authors : additionalInfo, managed, cuid {
+        books : Composition of many Books
+                    on books.author = $self;
+    }
+
+    entity Publishers : additionalInfo, managed, cuid {
+        books : Composition of many Books
+                    on books.publisher = $self;
+    }
+    ```
 
 ## Add New GET HTTP Request
 ### Steps:

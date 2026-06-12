@@ -53,25 +53,25 @@ This is a reference of Code for Day 7 Exercise 4
 1. Under `Content Manager`, Click **Create** > **Group**. You should now be able to see the **Bookshop Catalog** we created.
  <kbd> ![Description](images/Day7-Exercise3-Setup-Group-1.png)</kbd>
 
-14. Enter **Title** and **Description**. Assign the app by clicking the Assignment status
+2. Enter **Title** and **Description**. Assign the app by clicking the Assignment status
     - Title: **Bookshop Group**
     - Description: **A Bookshop Group**
 
     <kbd> ![Description](images/Day7-Exercise3-Setup-Group-2.png)</kbd>
 
-16. Click **Save** and go back to **Content Manager**.
+3. Click **Save** and go back to **Content Manager**.
 
 ### Setup Role
 #### Steps
 
-17. After we configure the **Catalog** and **Group**, we will setup the **role**.
-18. For role, Open **Everyone** from the table list. 
+1. After we configure the **Catalog** and **Group**, we will setup the **role**.
+2. For role, Open **Everyone** from the table list. 
 <kbd> ![Description](images/Day7-Exercise3-Setup-Role-1.png)</kbd>
 
-19. Click **Edit**. Assign the app by clicking the Assingment status.
+3. Click **Edit**. Assign the app by clicking the Assingment status.
 <kbd> ![Description](images/Day7-Exercise3-Setup-Role-2.png)</kbd>
 
-21. Click **Save** and go back to **Site Directory**.
+4. Click **Save** and go back to **Site Directory**.
 
 ### Access Site / FLP
 1. Open **Bootcamp Launchpad** by clicking the **open new window** icon.
