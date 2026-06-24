@@ -21,8 +21,9 @@ This is a reference of Code for Day 6 Exercise 2
     <kbd> ![Description](images/Day6-Exercise2-Assign-Role-Collection.png)</kbd>
 
 6. Once role assignment is completed, go back to `Instances and Subscription` > `SAP HANA Cloud` and click `Go to Application`.
+    > [Note] Before you create SAP HANA Cloud Instance, please logout to propagate the Role Collection.
 
-    <kbd> ![Description](images/Day6-Exercise2-Open-SAP-HANA-Cloud.png)</kbd>
+<kbd> ![Description](images/Day6-Exercise2-Open-SAP-HANA-Cloud.png)</kbd>
 
 ## Create SAP HANA Database
 

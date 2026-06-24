@@ -6,12 +6,6 @@ This is a reference of Code for Day 5 Exercise 1
 1. In `BAS`, open command palette (`Shift + Command + P for MAC` / `Ctrl + Shift + P for WIN`). Choose `Fiori: Open Application Generator`.<br>  
 <kbd> ![Description](images/Day5-Exercise1-Open-App-Generator.png)</kbd>
 
-2. **Alternatively**, from Get Started Page. Choose `Menu` > `Help` > `Get Started` > `New Project from Template`.<br>   
-    <kbd> ![Description](images/Day5-Exercise1-New-Proj-Template.png)</kbd>
-
-    Then select `SAP Fiori Generator`.
-    <kbd> ![Description](images/Day5-Exercise1-SAPUI5-Generator.png)</kbd>
-
 ## Template Selection
 ### Step
 1. Select `List Report Page` from Template Selection. Click `Next`.<br>  
@@ -56,6 +50,7 @@ This is a reference of Code for Day 5 Exercise 1
     <kbd> ![Description](images/Day5-Exercise1-Deployment-Configuration.png)</kbd>
     
  ## Summary of Generated Fiori Project
+It will take a while to generate the UI components. After that, a summary of Generated Fiori Project will be displayed.
 <kbd> ![Description](images/Day5-Exercise1-App-Report-Preview.png)</kbd>
  
  ## Project Structure

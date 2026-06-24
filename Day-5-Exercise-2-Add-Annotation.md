@@ -3,7 +3,7 @@ This is a reference of Code for Day 5 Exercise 2
 
 ## Add annotation for Selection Fields
 ### Steps
-1. Open **annotation.cds** in `app` > `report` folder path. 
+1. Open `annotation.cds` in `app` > `report` folder path. 
 2. Add annotations to service `Books` in end of the line.
 ```cds
 annotate service.Books with @(
@@ -30,7 +30,7 @@ annotate service.Books with @(
     ```
     <kbd> ![Description](images/Day5-Exercise2-Add-Draft.png)</kbd>
 
-3. Next is to `re-build` our local database. Execute the command below in `terminal`.
+3. Next is to `re-build` our local database. Execute the command below in `terminal`. Terminate the terminal by using `ctrl + c`, then execute the command below.
     ```cds
     cds build
     cds deploy –to sqlite

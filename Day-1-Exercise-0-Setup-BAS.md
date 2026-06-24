@@ -1,13 +1,6 @@
 # Day 1 Exercise 0 - Setup of BAS
 This is a reference of Code for Day 1 Exercise.
 
-# DUMMY
-## Create initial project via Wizard
-### Steps:
-1
-    - admin/Books    
-<kbd>  ![Description](images/Day1-Exercise1-Books-Data.png) </kbd>
-
 ## Open BAS
 ### Steps:
 

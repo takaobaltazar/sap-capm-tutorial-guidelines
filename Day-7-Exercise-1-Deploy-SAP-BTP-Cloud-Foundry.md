@@ -42,15 +42,6 @@ This is a reference of Code for Day 7 Exercise 1
 2. The **package.json** will be modified and will include configuration for production database which is Hana Cloud. Also, the **yaml** file will be modified. <br>   
 <kbd> ![Description](images/Day7-Exercise1-HANA-Config.png)</kbd>  
 
-### Execute npm install
-#### Steps
-1. Open **terminal** and execute command below to install dependencies.
-    ```cds
-    npm install
-    ```
-    <kbd> ![Description](images/Day7-Exercise1-npm-install.png)</kbd>  
-
-
 ### Install Modules
 ### Steps
 1. Open again **terminal** and execute the command below:
