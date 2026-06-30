@@ -1,29 +1,74 @@
-# Day 1 Exercise 2 - Setup Booster
+# Day 1 Exercise 2 - Setup Cloud Identity Provider and Subscribe to Build Work Zone.
 This is a reference of Code for Day 1 Exercise 2.
 
-## Create initial project via Wizard
+## Setup Cloud Identity Provider
+
 ### Steps:
-1. Open your `BTP Cockpit` and navigate to `Global Account (e.g. cccc1e09trial)`.
-2. Then go to `Booster` and search for `Get Started with SAP Build Apps` and click it. 
-<kbd> ![Description](images/Day1-Exercise2-Select-Booster.png) </kbd>
 
-3. Click `Start`. It automatically establishes the necessary trust without requiring access to the Security → Trust Configuration.
-<kbd> ![Description](images/Day1-Exercise2-Start-Booster.png) </kbd>
+1. In your `BTB Cockpit`, navigate to  `Services` -> `Instances & Subscription`, and click the `Create` button. 
 
-4. Click `Next`.
-<kbd> ![Description](images/Day1-Exercise2-Check-Prerequisite.png) </kbd>
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-1.png) </kbd>
 
-5. Select `Subaccount` and click `Next`.
-<kbd> ![Description](images/Day1-Exercise2-Select-Scenario.png) </kbd>
+2. Select the following and click `Create`.
+    - Service: `Cloud Identity Services`
+    - Plan: `default`
 
-6. These are the Services will be created and Click `Next`.
-<kbd> ![Description](images/Day1-Exercise2-Configure-Subaccount.png) </kbd>
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-2.png) </kbd>
 
-7. Click `Next`.
-<kbd> ![Description](images/Day1-Exercise2-Add-User.png) </kbd>
+3. After creating the instance, an email will be sent to activate your account. Please check your email and activate the account.
 
-8. Click `Finish`.
-<kbd> ![Description](images/Day1-Exercise2-Review.png) </kbd>
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-3.png) </kbd>
+
+4. Click `Skip`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-4.png) </kbd>
+
+
+5. Set `Password`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-5.png) </kbd>
+
+6. Account Activated.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-6.png) </kbd>
+
+7. Go to `BTP Cockpit` and click `Security` -> `Trust Configuration` and click button `Establish Trust`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-7.png) </kbd>
+
+8. Select the `tenant`. It will only show 1 tenant.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-8.png) </kbd>
+
+9. Details are auto populated. No need for modification. Click `Next`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-9.png) </kbd>
+
+10. Details are auto populated. No need for modification. Click `Next`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-10.png) </kbd>
+
+11. Click `Finish`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-11.png) </kbd>
+
+12. Summary.
+
+    <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-12.png) </kbd>
+
+
+## Subscribe to SAP Build Work Zone
+
+### Steps
+
+1. Go to `BTP Cockpit` and click `Services` -> `Instances and Subscription` and click the button `Create`. Fill-up the following details:
+    - Service: `SAP Build Zone, standard edition`
+    - Plan: `standard`
+    <kbd> ![Description](images/Day1-Exercise2-Build-WorkZone-1.png) </kbd>
+
+2. Once subscribed to SAP Build Work Zone, a new entry should be added in the `Instances & Subscription`.
+
+    <kbd> ![Description](images/Day1-Exercise2-Build-WorkZone-2.png) </kbd>
 
 ## De-activate Custom IDP
 ### Steps
