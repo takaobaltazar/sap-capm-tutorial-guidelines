@@ -44,7 +44,9 @@ This is a reference of Code for Day 1 Exercise 2.
 
     <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-9.png) </kbd>
 
-10. Details are auto populated. No need for modification. Click `Next`.
+10. De-select the following checkbox. Click `Next`.
+    - `Available for User Logon`.
+    - `Create Shadow User on Logon`.
 
     <kbd> ![Description](images/Day1-Exercise2-Cloud-Identity-10.png) </kbd>
 
@@ -63,7 +65,7 @@ This is a reference of Code for Day 1 Exercise 2.
 
 1. Go to `BTP Cockpit` and click `Services` -> `Instances and Subscription` and click the button `Create`. Fill-up the following details:
     - Service: `SAP Build Zone, standard edition`
-    - Plan: `standard`
+    - Plan: `Subscription - standard`
     <kbd> ![Description](images/Day1-Exercise2-Build-WorkZone-1.png) </kbd>
 
 2. Once subscribed to SAP Build Work Zone, a new entry should be added in the `Instances & Subscription`.
@@ -76,19 +78,13 @@ This is a reference of Code for Day 1 Exercise 2.
 1. Go to your subaccount system thru `trial` > `Security` > `Trust Configuration`.
 <kbd> ![Description](images/Day1-Exercise2-Trust-Config.png) </kbd>
 
-2. Select `Default identity Provider` and click `Edit`.
-<kbd> ![Description](images/Day1-Exercise2-Edit-Default.png) </kbd>
-
-3. In the `Parameters` tab, select `Available for User Logon` and click `Save`.
-<kbd> ![Description](images/Day1-Exercise2-Edit-Available-User-Logon.png) </kbd>
-
-4. Now, from the `Trust Configuration` menu, click the `Custom IAS tenant` and click `Edit`.
+2. Now, from the `Trust Configuration` menu, click the `Custom IAS tenant` and click `Edit`.
 <kbd> ![Description](images/Day1-Exercise2-Edit-Custom-IAS-Tenant.png) </kbd>
 
-5. In the `Main Information` tab, set the `Status` to **Inactive** and click `Save`.
+3. In the `Main Information` tab, set the `Status` to **Inactive** and click `Save`.
 <kbd> ![Description](images/Day1-Exercise2-Edit-Inactive-Custom-IAS-Tenant.png) </kbd>
 
-6. Now, this is the final result after modifying the trust configuration.
+4. Now, this is the final result after modifying the trust configuration.
 <kbd> ![Description](images/Day1-Exercise2-Final-Trust-Config.png) </kbd>
 
 ## Assign Role Collection
