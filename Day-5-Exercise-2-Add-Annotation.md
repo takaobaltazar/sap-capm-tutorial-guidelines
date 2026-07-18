@@ -33,7 +33,7 @@ annotate service.Books with @(
 3. Next is to `re-build` our local database. Execute the command below in `terminal`. Terminate the terminal by using `ctrl + c`, then execute the command below.
     ```cds
     cds build
-    cds deploy –to sqlite
+    cds deploy –to sqlite srv
     ```
 
 ## Enable Draft : Create and Delete

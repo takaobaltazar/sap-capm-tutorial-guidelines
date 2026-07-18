@@ -18,6 +18,12 @@ This is a reference of Code for Day 3 Exercise 2
     }
     ```
 
+4. If you are using `VS Code`, you need to remove this entry in your `package.json`. Else, if you are using BAS, you can skip this step.
+
+    ```
+    "type": "module"
+    ```
+
 ## Modify Service Definition
 Comment-out `@insertonly`
 ### Steps:
