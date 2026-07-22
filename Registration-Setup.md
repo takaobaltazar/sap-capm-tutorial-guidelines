@@ -55,6 +55,16 @@ This step is only applicable if you are not able to register successfully in SAP
 
     <kbd>  ![Description](images/VSCode-Setup-3.png) </kbd>
 
-7. Click the item and it should open a window to allow you in creating a project. We will not create a project for now and let's wait for the Official Bootcamp to start.
+7. A Template Wizard screen will appear, click the `Explore and Install Generators` link.
+
+    <kbd>  ![Description](images/VSCode-Setup-5.png) </kbd>
+
+8. Install the following:
+    - @sap/generator-cap-project
+    - @sap/generator-fiori
+
+    <kbd>  ![Description](images/VSCode-Setup-6.png) </kbd>
+
+9. Click the item and it should open a window to allow you in creating a project. We will not create a project for now and let's wait for the Official Bootcamp to start.
 
     <kbd>  ![Description](images/VSCode-Setup-4.png) </kbd>
