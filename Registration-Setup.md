@@ -40,6 +40,8 @@ This is a reference for SAP BTP Registration or Setup of VSCode.
 
     <kbd>  ![Description](images/Registration-9.png) </kbd>
 
+    >   If you have an existing SAP BTP Trial that has been fully verified, you can use it instead.
+
 ## VSCode - In case BTP not available
 This step is only applicable if you are not able to register successfully in SAP BTP and unable to use the Business Application Studio (BAS). Otherwise, you can skip this step.
 
