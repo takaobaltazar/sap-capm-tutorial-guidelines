@@ -1,32 +1,44 @@
 # Registration
-This is a reference of Code for Day 1 Exercise.
+This is a reference for SAP BTP Registration or Setup of VSCode.
 
 ## Registration to BTP
 ### Steps:
 
-1. In your BTP Cockpit sub-account, Go to `Services` > `Instances and Subscription` > `Subscription` tab. Then, click the `SAP Business Application Studio`.
+1. Register to SAP BTP Trial Account by clicking the link below. Click `Try Now`. https://www.sap.com/sea/products/technology-platform/trial.html
 
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS.png) </kbd>
+    <kbd>  ![Description](images/Registration-1.png) </kbd>
 
-2. Click `OK` 
+2. Enter your email address:
 
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS-1.png) </kbd>
+    <kbd>  ![Description](images/Registration-2.png) </kbd>
 
-3. Click `Create DEV Space`.
+3. Fill-up the following details:
 
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS-2.png) </kbd>
+    <kbd>  ![Description](images/Registration-3.png) </kbd>
 
-4. Fill-out the following for the creation of work space. Then click `Create Dev Space`.
-    - Dev Space Name: `dev`
-    - Application Type: `Full Stack Cloud Application`.
+4. Once you submit the registration, an email will be sent to create your password.
 
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS-3.png) </kbd>
+    <kbd>  ![Description](images/Registration-4.png) </kbd>
 
-5. Workspace will now be created. Once the status is `Running`, you may now click the `dev` link.
+5. Open your email and check the email subject `Activate Your Account for SAP.com`. Click button `Click to activate your account`.
 
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS-4.png) </kbd>
-    <kbd>  ![Description](images/Day1-Exercise0-Open-BAS-5.png) </kbd>
+    <kbd>  ![Description](images/Registration-5.png) </kbd>
 
+6. Set your password.
+
+    <kbd>  ![Description](images/Registration-6.png) </kbd>    
+
+7. Account activated.
+
+    <kbd>  ![Description](images/Registration-7.png) </kbd>
+
+8. Now go to SAP HANA BTP Trial: https://cockpit.hanatrial.ondemand.com/
+
+9. The last step is to verify your mobile number.
+
+10. In case of issue / problem during mobile verification, we need to setup VSCode. SAP might have restrict the PH Region for Mobile verification.
+
+    <kbd>  ![Description](images/Registration-9.png) </kbd>
 
 ## VSCode - In case BTP not available
 This step is only applicable if you are not able to register successfully in SAP BTP and unable to use the Business Application Studio (BAS). Otherwise, you can skip this step.
