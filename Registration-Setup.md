@@ -42,6 +42,28 @@ This is a reference for SAP BTP Registration or Setup of VSCode.
 
     >   If you have an existing SAP BTP Trial that has been fully verified, you can use it instead.
 
+11. If you are able to verify your mobile number successfully, then you can proceed on the next step.
+
+12. Open the [BTP Trial Cockpit](https://account.hanatrial.ondemand.com/trial/#/home/trial). Then click `Continue to Trial Home`.
+
+    <kbd>  ![Description](images/Registration-10.png) </kbd>
+
+13. Click `US East (VA) - AWS`.
+
+    <kbd>  ![Description](images/Registration-11.png) </kbd>
+
+14. After selecting the region, this will create a Global Sub Account.
+
+    <kbd>  ![Description](images/Registration-12.png) </kbd>
+
+15. Once completed, click `Go to Your Trial Account`.
+
+    <kbd>  ![Description](images/Registration-13.png) </kbd>
+
+16. SAP BTP Trial Account Completed - With Global Sub Account.
+
+    <kbd>  ![Description](images/Registration-14.png) </kbd>
+
 ## VSCode - In case BTP not available
 
 This step is only applicable if you are not able to register successfully in SAP BTP and unable to use the Business Application Studio (BAS). Otherwise, you can skip this step.
