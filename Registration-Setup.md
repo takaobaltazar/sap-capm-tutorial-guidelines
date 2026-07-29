@@ -36,13 +36,14 @@ This is a reference for SAP BTP Registration or Setup of VSCode.
 
 9. The last step is to verify your mobile number.
 
-10. In case of issue / problem during mobile verification, we need to setup VSCode. SAP might have restrict the PH Region for Mobile verification.
+10. In case of issue / problem during mobile verification, we need to setup [VSCode](#vscode---in-case-btp-not-available). SAP might have restrict the PH Region for Mobile verification.
 
     <kbd>  ![Description](images/Registration-9.png) </kbd>
 
     >   If you have an existing SAP BTP Trial that has been fully verified, you can use it instead.
 
 ## VSCode - In case BTP not available
+
 This step is only applicable if you are not able to register successfully in SAP BTP and unable to use the Business Application Studio (BAS). Otherwise, you can skip this step.
 
 ### Steps
