@@ -66,11 +66,11 @@ This is a reference of Code for Day 1 Exercise 2.
 1. Go to `BTP Cockpit` and click `Services` -> `Instances and Subscription` and click the button `Create`. Fill-up the following details:
     - Service: `SAP Build Zone, standard edition`
     - Plan: `Subscription - standard`
-    <kbd> ![Description](images/Day1-Exercise2-Build-WorkZone-1.png) </kbd>
+    <kbd> ![Description](images/Day1-Exercise2-Build-Workzone-1.png) </kbd>
 
 2. Once subscribed to SAP Build Work Zone, a new entry should be added in the `Instances & Subscription`.
 
-    <kbd> ![Description](images/Day1-Exercise2-Build-WorkZone-2.png) </kbd>
+    <kbd> ![Description](images/Day1-Exercise2-Build-Workzone-2.png) </kbd>
 
 ## De-activate Custom IDP
 ### Steps
