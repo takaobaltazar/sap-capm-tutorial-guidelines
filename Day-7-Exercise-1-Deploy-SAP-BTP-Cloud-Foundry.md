@@ -82,7 +82,8 @@ This is a reference of Code for Day 7 Exercise 1
 <kbd> ![Description](images/Day7-Exercise1-Deploy-To-Production-3.png)</kbd>
 
 3. A window will appear to login into Cloud Foundry. Please click the link `Open a new browser page to generate your SSO passcode`.<br>   
-<kbd> ![Description](images/Day7-Exercise1-Deploy-To-Production-4.png)</kbd>
+    > Please ensure to validate your Cloud Found Endpoint by checking thru BTP Cockpit - Trial Home > Global Account (e.g. cf8ea12trial) > trial > Clound Foundry Environment. 
+    <kbd> ![Description](images/Day7-Exercise1-Deploy-To-Production-4.png)</kbd>
 
 4. A new window will open in your browser. Select `Sign in with default identity Provider`.
 <kbd> ![Description](images/Day7-Exercise1-Deploy-To-Production-5.png)</kbd>
